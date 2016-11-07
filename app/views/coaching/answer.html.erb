@@ -1,0 +1,23 @@
+<h1>Coaching#answer</h1>
+<!-- <p>Find me in app/views/coaching/answer.html.erb</p>
+ -->
+
+<%= @query %>
+<br>
+<br>
+
+<%  if @query.include?"?" %>
+  <%= "Silly question, get dressed and go to work!" %>
+<% elsif @query == "I am going to work right now!" %>
+  <%= "" %>
+<% else %>
+  <%= "I don't care, get dressed and go to work!" %>
+<% end %>
+
+<br>
+<br>
+
+<%= link_to('/ask') do %>
+<%= 'ask a new question' %>
+<% end %>
+
